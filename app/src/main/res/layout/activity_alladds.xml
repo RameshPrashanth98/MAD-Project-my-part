@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgwhite"
+    tools:context=".alladds">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/input_bg"
+        android:queryHint="search by location"
+        app:layout_constraintEnd_toStartOf="@+id/btnmyadds"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnmyadds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="2dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/myadd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layad1"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/btndes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint7"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btndes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="51dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="more"
+                android:textSize="5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Sheeba"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtxdoggender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:text="male"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtdogtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/dogtype"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+            <TextView
+                android:id="@+id/txtowner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/ownername2"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtdogtype" />
+
+            <TextView
+                android:id="@+id/txtxtypeans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="29dp"
+                android:text="Labrador Retriever"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toEndOf="@+id/txtdogtype"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtownerans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:text="Mr.Saman Perera"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toEndOf="@+id/txtowner"
+                app:layout_constraintTop_toBottomOf="@+id/txtxtypeans" />
+
+            <TextView
+                android:id="@+id/txtdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/lostdate"
+                android:textColor="@color/black"
+                android:textSize="5sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtowner" />
+
+            <TextView
+                android:id="@+id/txtdateans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
+                android:text="2021/03/10"
+                android:textColor="@color/black"
+                android:textSize="5sp"
+                app:layout_constraintStart_toEndOf="@+id/txtdate"
+                app:layout_constraintTop_toBottomOf="@+id/txtownerans" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="88dp"
+                android:layout_marginBottom="13dp"
+                android:shadowColor="@android:color/holo_blue_dark"
+                android:text="Karapitiya, Galle"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn2"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="10dp"
+                android:layout_height="7dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="13dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/txtdateans"
+                app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imgdog1"
+            android:layout_width="100dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraint7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dog1"
+            tools:srcCompat="@drawable/dog1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layad2"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/btndes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ad2"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/btndes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgdog2">
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="51dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="more"
+                android:textSize="5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Rex"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtdogtype2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/dogtype"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt" />
+
+            <TextView
+                android:id="@+id/txtxtypeans3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="31dp"
+                android:text="Labrador Retriever"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toEndOf="@+id/txtdogtype2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtowner2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/ownername2"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtdogtype2" />
+
+            <TextView
+                android:id="@+id/txtownerans2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="4dp"
+                android:text="Ms.J.K. De Silva"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toEndOf="@+id/txtowner2"
+                app:layout_constraintTop_toBottomOf="@+id/txtxtypeans3" />
+
+            <TextView
+                android:id="@+id/txtdate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/lostdate"
+                android:textColor="@color/black"
+                android:textSize="5sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtowner2" />
+
+            <TextView
+                android:id="@+id/txtdateans2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="10dp"
+                android:text="2021/03/10"
+                android:textColor="@color/black"
+                android:textSize="5sp"
+                app:layout_constraintStart_toEndOf="@+id/txtdate2"
+                app:layout_constraintTop_toBottomOf="@+id/txtownerans2" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="13dp"
+                android:text="Hikaduwa,, Galle"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txtxdoggender2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:text="male"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="10dp"
+                android:layout_height="7dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="13dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/txtdateans2"
+                app:srcCompat="@drawable/ic_baseline_location_on_24" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imgdog2"
+            android:layout_width="100dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dog2"
+            tools:srcCompat="@drawable/dog2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layad3"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btndes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layad1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ad3"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btndes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Windy"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtdogtype4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/dogtype"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt3" />
+
+            <TextView
+                android:id="@+id/txtxtypeans4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="4dp"
+                android:text="Baby Bulldog"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toEndOf="@+id/txtdogtype4"
+                app:layout_constraintTop_toBottomOf="@+id/txt3" />
+
+            <TextView
+                android:id="@+id/txtowner5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/ownername2"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtdogtype4" />
+
+            <TextView
+                android:id="@+id/txtownerans4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:text="Mr.Kasun Rajitha"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toEndOf="@+id/txtowner5"
+                app:layout_constraintTop_toBottomOf="@+id/txtxtypeans4" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="13dp"
+                android:shadowColor="@android:color/holo_blue_dark"
+                android:text="Malabe,Colombo"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txtdate4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/lostdate"
+                android:textColor="@color/black"
+                android:textSize="5sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtowner5" />
+
+            <TextView
+                android:id="@+id/txtdateans4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
+                android:text="2021/03/10"
+                android:textColor="@color/black"
+                android:textSize="5sp"
+                app:layout_constraintStart_toEndOf="@+id/txtdate4"
+                app:layout_constraintTop_toBottomOf="@+id/txtownerans4" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="10dp"
+                android:layout_height="7dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginBottom="13dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView12"
+                app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+            <TextView
+                android:id="@+id/txtxdoggender3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:text="Female"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="51dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="more"
+                android:textSize="5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imgdog3"
+            android:layout_width="100dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dog3"
+            tools:srcCompat="@drawable/dog3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layad4"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/btndes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layad2">
+
+        <ImageView
+            android:id="@+id/imgdog4"
+            android:layout_width="100dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dog4"
+            tools:srcCompat="@drawable/santha" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ad4"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btndes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/txtdate3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/lostdate"
+                android:textColor="@color/black"
+                android:textSize="5sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtowner4" />
+
+            <TextView
+                android:id="@+id/txtowner4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/ownername2"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtdogtype3" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Santha"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtdogtype3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/dogtype"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt2" />
+
+            <TextView
+                android:id="@+id/txtxtypeans2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:text="chiwawa"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toEndOf="@+id/txtdogtype3"
+                app:layout_constraintTop_toBottomOf="@+id/txt2" />
+
+            <TextView
+                android:id="@+id/txtownerans3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="7dp"
+                android:text="Mr.Santhush Santha"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toEndOf="@+id/txtowner4"
+                app:layout_constraintTop_toBottomOf="@+id/txtxtypeans2" />
+
+            <TextView
+                android:id="@+id/txtdateans3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
+                android:text="2021/03/18"
+                android:textColor="@color/black"
+                android:textSize="5sp"
+                app:layout_constraintStart_toEndOf="@+id/txtdate3"
+                app:layout_constraintTop_toBottomOf="@+id/txtownerans3" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="13dp"
+                android:text="Colombo 07, Colombo"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="51dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="more"
+                android:textSize="5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="10dp"
+                android:layout_height="7dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="13dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView11"
+                app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+            <TextView
+                android:id="@+id/txtxdoggender4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:text="male"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layad5"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btndes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layad3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btndes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layad6"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/btndes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layad4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btndes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
